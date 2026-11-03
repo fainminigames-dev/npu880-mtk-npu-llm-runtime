@@ -1,0 +1,32 @@
+# models (multi-GB, personal downloads)
+*.gguf
+models/
+
+# binaries & build artifacts
+v182_r22_bin
+v182_r21_bin
+*.o
+*.so
+*.exe
+*.dll
+
+# historical probe archives / dumps (kept local, NOT published)
+old-test/
+*.zip
+*.log
+*.dump
+
+# device-side runtime artifacts
+*.src_sha256
+run_*.ps1
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# local secrets / keys — NEVER commit
+*.pem
+*.key
+.env
+id_rsa*
