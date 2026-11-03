@@ -21,7 +21,14 @@ import shutil
 import subprocess
 import time
 
-BASE_DIR = "/data/user/0/com.agy/files/qwen35_npu"
+# [r22 FIX] Resolve everything relative to THIS script's location (the repo's src/ dir),
+# instead of a hard-coded /data/user/0/com.agy/files/qwen35_npu path.
+# Override with env var if you keep sources elsewhere:
+#   QWEN35_NPU_DIR=/path/to/dir python3 build_r22.py
+BASE_DIR = os.environ.get(
+    "QWEN35_NPU_DIR",
+    os.path.dirname(os.path.abspath(__file__)),
+)
 R22_SRC = os.path.join(BASE_DIR, "v182_r22_breakthrough_engine.c")
 VERIFIER_SRC = os.path.join(BASE_DIR, "npu_tree_verifier_v22.c")
 DRAFTER_SRC = os.path.join(BASE_DIR, "adaptive_tree_drafter_v22.c")
