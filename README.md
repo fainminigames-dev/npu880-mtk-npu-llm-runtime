@@ -2,7 +2,7 @@
 
 **Status:** Work in Progress — research code, not production-ready.
 **License:** MIT (see LICENSE) — original code only; see DISCLAIMER.md.
-**Test device:** POCO X7 Pro (MediaTek Dimensity 8400 Ultra, MT6899, NPU 880), Android 15 / HyperOS 2.
+**Test device:** POCO X7 Pro (MediaTek Dimensity 8400 Ultra, MT6899, NPU 880), Android 16 / HyperOS 3.
 **Target model:** Qwen3.5-4B, GGUF Q4_K_M (~2.7 GB, not included).
 
 ## What it is
